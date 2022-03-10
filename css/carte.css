@@ -1,0 +1,301 @@
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+         :root {
+            --principal: #fff;
+            --secondary: #fff;
+            --additional: #707070;
+            --gradient: linear-gradient(100deg, rgb(35, 35, 35), rgb(30, 30, 30), rgb(35, 35, 35));
+            --muted: rgb(200, 200, 200);
+        }
+        
+        body {
+            background-color: #252525;
+            background-image: linear-gradient(270deg, #303030, #202020);
+            background-repeat: repeat-y;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        
+        material-icons {
+            color: #000;
+        }
+        /* Theme Changer */
+        
+        header {
+            width: 100%;
+            height: 120px;
+            background-image: linear-gradient(170deg, #303030, #101010, #151515);
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            color: #eee;
+            padding: 0px 50px;
+            padding-top: 20px;
+        }
+        
+        header .themes {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303030;
+        }
+        
+        .themes div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 90, 0);
+        }
+        
+        .themes div i {
+            font-size: 15px !important;
+            object-fit: cover;
+        }
+        
+        .themes div:active {
+            transform: scale(0.95);
+        }
+        
+        .themes #dark {
+            background-color: #000;
+            color: #fff;
+        }
+        
+        .themes #light {
+            background-color: #fff;
+            color: #000;
+        }
+        /* CARTE ARRIÉRE */
+        
+        .container {
+            margin-top: 100px;
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            background-image: var(--gradient);
+            border-radius: 20px;
+            box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 0.25);
+            display: flex;
+        }
+        
+        .container .image {
+            width: 500px;
+            height: 500px;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: transparent;
+            border-radius: 20px;
+        }
+        
+        .container .image img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 50%;
+            padding: 50px 0px;
+        }
+        
+        .container .image .name {
+            padding-bottom: 100px;
+            overflow: hidden;
+            position: relative;
+            top: -25px;
+            text-align: center;
+        }
+        
+        .container .image .name h1 {
+            color: var(--additional);
+        }
+        
+        .container .image .name p {
+            color: var(--muted);
+            position: relative;
+            top: 10px;
+        }
+        
+        .line {
+            position: absolute;
+            width: 1px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--secondary);
+            opacity: 0.25;
+        }
+        
+        .info {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0px;
+        }
+        
+        .column {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .info .text {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 108%;
+        }
+        
+        .description {
+            text-align: right;
+            width: 200px;
+            color: var(--secondary);
+        }
+        
+        .title {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background-color: var(--additional);
+            border-radius: 50px;
+            padding: 0px 10px;
+            font-weight: 500;
+            color: var(--principal);
+            width: 150px;
+        }
+        
+        .title i {
+            margin-right: 5px;
+        }
+        
+        .company {
+            width: 80%;
+            height: 50px;
+            background-color: var(--additional);
+            color: var(--principal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            content: flex;
+        }
+        
+        .company i {
+            margin-right: 10px;
+        }
+        /* CARTE ARRIÉRE */
+        
+        .front-face {
+            flex-direction: column;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: cover;
+            color: var(--principal);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .front-face .after {
+            position: absolute;
+            width: 1000px;
+            height: 500px;
+            border-radius: 20px;
+            -webkit-backdrop-filter: blur(5px) brightness(0.5);
+            -moz-backdrop-filter: blur(5px) brightness(0.5);
+            -o-backdrop-filter: blur(5px) brightness(0.5);
+            -ms-backdrop-filter: blur(5px) brightness(0.5);
+            backdrop-filter: blur(5px) brightness(0.5);
+            z-index: 0 !important;
+        }
+        
+        .front-face * {
+            z-index: 1;
+        }
+        
+        .front-face i {
+            font-size: 75px;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: var(--additional);
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        /*---------------- EXPORT SECTION ----------------*/
+        
+        .export {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100px;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+        }
+        
+        .after-export {
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            backdrop-filter: blur(50px);
+            border-radius: 20px;
+            z-index: 1 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        
+        .export * {
+            z-index: 2;
+        }
+        
+        .export .download,
+        .export .preview {
+            background-color: var(--additional);
+            margin: 0 50px;
+            padding: 5px 30px;
+            color: var(--principal);
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        /* =============================== Footer =============================== */
+        
+        footer {
+            background-image: linear-gradient(-170deg, #303030, #101010, #151515);
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 100px;
+        }
+        
+        @media (max-width: 767px) {}
